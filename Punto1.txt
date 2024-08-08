@@ -1,0 +1,20 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+        int resultado = sumar(10);
+
+        System.out.println("La sumatoria de los números enteros comprendidos entre el 1 y el 10 es: " + resultado);
+
+    }
+
+    private static int sumar(int n) {
+        if (n == 1){
+            return 1;
+        } else{
+            return n + sumar(n -1);
+
+        }
+    }
+
+}
